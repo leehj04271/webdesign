@@ -1,0 +1,283 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+
+.cf::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    font-size: 14.4px;
+
+}
+
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+
+#section .article2 .notice table td,
+#section .article2 .notice table th {
+    padding: 5px 0
+}
+
+col:nth-child(1) {
+    width: 80%;
+
+}
+
+tr:nth-child(even) {
+    background-color :rgba(239, 203, 207, 0.291);
+}
+
+
+
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+
+    font-size: 16px;
+    color: #444;
+}
+
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+#logo {
+    float: left;
+    margin: 30px 0;
+}
+
+#logo img {
+    width: 200px;
+
+}
+
+#header {
+    border-bottom: 3px solid #888;
+}
+
+#nav {
+    float: right;
+    font-weight: 600;
+}
+
+#nav .depth1 {
+    width: 600px;
+}
+
+#nav .depth1>li {
+    float: left;
+    width: calc(100%/3);
+    position: relative;
+}
+
+#nav .depth1>li:hover {
+    background-color  : rgba(108, 255, 223, 0.529);
+    transition: all .1s ease-in;
+
+}
+
+#nav .depth1>li:hover>.depth2 {
+    transition: all .3s ease-in;
+    max-height: 300px;
+}
+
+
+
+#nav .depth1>li>a {
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+}
+
+/* li {
+    border: 1px solid #ddd;
+} */
+
+#nav {
+    margin-top: 60px;
+}
+
+.depth2 {
+    font-weight: 500;
+
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 5;
+}
+
+.depth2>li>a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav .depth2>li:hover {
+    color: white;
+    background-color: skyblue;
+}
+
+.article1 {}
+
+#section .article1 .slide {
+    display: none;
+    height: 400px;
+    position: relative;
+
+}
+
+#section .article1 .slide:nth-child(1) {
+    display: block;
+    background-image: url('../img/images\(1\).jpg');
+}
+
+#section .article1 .slide:nth-child(2) {
+    background-image: url('../img/images\(2\).jpg');
+}
+
+
+#section .article1 .slide:nth-child(3) {
+    background-image: url('../img/images\(3\).jpg');
+}
+
+
+#section .article1 .slide p {
+    font-size: 24px;
+    color: gainsboro;
+    width: 600px;
+    padding: 13px 0;
+    background-color: rgba(203, 203, 203, 0.37);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+
+.address pre {
+    font-style: normal;
+    font-family: inherit;
+}
+
+.bmenu {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.address {
+    float: right;
+    width: 50%;
+}
+
+#section .article2 .notice {
+    float: left;
+    width: 48%;
+}
+
+#section .article2 .info {
+    float: right;
+    width: 48%;
+}
+
+.article2 {
+    padding: 20px 0;
+}
+
+#section .article2 h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    padding: 5px 0;
+}
+
+.info {
+    text-align: center;
+}
+
+.info>div {
+    margin-top: 5px;
+}
+
+.article3 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.article3>div {
+    display: inline-block;
+    margin : 0 40px;
+text-align: center;
+}
+
+.article3 div  img {
+    display: block;
+    margin-bottom : 20px;
+
+}
+
+.article3 button {
+    border : none;
+    padding : 4px 8px;
+    border-radius: 5px;
+    background-color: #aaa;
+    color : white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.article3 button:hover {
+    background-color: skyblue;
+}
+
+#section .article3  div button:hover {
+   cursor: url(../img/여행가이드_LOGO.png) 4 12, pointer;
+}

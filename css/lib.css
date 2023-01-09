@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+
+.bg {
+    background-color: transparent;
+}
+
+
+
+.cf::after {
+    content : ' ';
+    width: 100%;
+    height: 100%;
+    display : block;
+    clear : both;
+    background-color: 'red';
+}
+
+body {
+    color : white;
+}
+
+header {
+    position : relative;
+    background-color: wheat;
+    background-image: url(../img/images\(1\).jpg);
+    background-size: 100vw 8px;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+float :left;
+padding : 10px;
+position: relative;
+background-color: transparent;
+}
+
+.nav1 {
+    text-align: right;
+    height: 100%;
+    background-color: transparent;
+
+}
+
+.nav1 li {
+    display: inline-block;
+    background-color: transparent;
+    padding : 3px;
+}
+.nav2 {
+padding-top: 30px;
+    float: right;
+    width: 80%;
+    text-align: center;
+ 
+}
+
+.nav2  > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 > ul > li {
+    width: 100%;
+}
+
+
+
+
+.nav2 > ul > li:hover > a {
+    color : blue;
+}
+
+
+.nav2 > ul > li:hover  ul {
+    background-color: aqua;
+}
+
+.nav2 > ul > li:hover ul  a:hover{
+    color : navy;
+}
+
+
+
+.nav2 >ul {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+
+
+.nav2 > ul:hover .sub-menu{
+
+    display: block;
+}
+
+
+
+
+
+
+
+
+.sub-menu {
+    display: none;
+
+
+}
+
+a {
+    display: block;
+}
+
+
+
+
+h1 {
+    position: relative;
+}
+
+
+
+.sub-menu {
+    height: 100%;
+}
